@@ -1,4 +1,127 @@
-/* Other rules */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@200;400;500;600&display=swap");
+/* 200 - 400 - 500 - 600 */
+
+/* Global rules */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Krub", sans-serif;
+  font-weight: 200;
+  background-color: #f5f5f5;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 70vw;
+}
 input {
+  font-family: "Krub", sans-serif;
+  font-weight: 200;
   text-decoration: none;
+  padding: 10px;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+a:hover {
+  color: #1e90ff;
+  font-weight: 600;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 30px;
+  color: #1e90ff;
+}
+
+/* Header */
+header {
+  background-color: white;
+  height: 15vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid #1e90ff;
+}
+header .wrapper {
+  display: flex;
+  align-items: center;
+}
+.icon-list {
+  font-size: 35px;
+  color: #1e90ff;
+}
+
+/* Main */
+main {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main ul li {
+  width: 500px;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+main ul li:hover {
+  background-color: #f1efef;
+  color: #1e90ff;
+}
+ul li input {
+  cursor: pointer;
+}
+ul li input,
+ul li label {
+  margin-right: 20px;
+}
+.icon-trash {
+  color: #1e90ff;
+  cursor: pointer;
+}
+
+/* Form */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 0 0;
+}
+form input:first-child {
+  width: 400px;
+}
+form input:last-child {
+  background-color: #1e90ff;
+  border: #1e90ff 1px solid;
+  color: white;
+  font-weight: 600;
+  width: 150px;
+  margin-left: 30px;
+}
+form input:last-child:hover {
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+}
+
+@media (max-width: 670px) {
+  main ul li {
+    width: 400px;
+    font-size: 14px;
+    /* margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px; */
+  }
 }
